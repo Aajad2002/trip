@@ -43,7 +43,7 @@ userRouter.post("/login", async (req, res) => {
                 if(result){
                     res.status(200).send({"msg":"Login successfull",name:user.name})
                 }else{
-                    res.status(201).send("Wrong credentials")
+                    res.status(201).send({"msg":"Wrong credentials"})
                 }
             });
         }
